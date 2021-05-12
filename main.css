@@ -6,6 +6,10 @@
   margin-bottom: 25px !important;
 }
 
+.clear-coffees {
+  cursor: pointer;
+}
+
 .bubble {
   position: relative;
   font-family: sans-serif;

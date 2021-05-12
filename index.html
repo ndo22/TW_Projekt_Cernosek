@@ -20,20 +20,24 @@
         </div>
     </nav>
     <div class="container mt-4">
+      <div class="d-flex justify-content-between">
         <h3 class="h5 top-coffee-title">My Top Coffees</h2>
-        <table class="table">
+        <a class="font-weight-bold clear-coffees text-danger" onclick="clearCoffees()">Reset Table</a>
+      </div>
+        <table class="table" id="top-table">
             <thead>
               <tr>
-                <th scope="col">Position</th>
                 <th scope="col">Coffee Name</th>
                 <th scope="col">Count</th>
-                <th scope="col">Total Price</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="top-table-body">
             </tbody>
         </table>
-        <p class="text-center">No Entries in the Table</p>
+        <p class="text-center" id="empty-table">No Entries in the Table</p>
+        <div id="chart-div">
+          <canvas id="coffee-chart" width="400" height="150"></canvas>
+        </div>
         <h3 class="h5 coffee-cards-heading">Coffee List</h2>
         <div class="row">
           <div class="col-lg-4 col-md-12 col-sm-12">
@@ -42,7 +46,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Coffee name</h5>
                   <p class="card-text">Some quick example text to build on the Coffee name and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-dark btn-block">Select Coffee</a>
+                  <a class="btn btn-dark btn-block text-white" onclick="selectCoffee(1)">Select Coffee</a>
                 </div>
             </div>
           </div>
@@ -52,7 +56,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Coffee name</h5>
                   <p class="card-text">Some quick example text to build on the Coffee name and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-dark btn-block">Select Coffee</a>
+                  <a class="btn btn-dark btn-block text-white" onclick="selectCoffee(2)">Select Coffee</a>
                 </div>
             </div>
           </div>
@@ -62,7 +66,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Coffee name</h5>
                   <p class="card-text">Some quick example text to build on the Coffee name and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-dark btn-block">Select Coffee</a>
+                  <a class="btn btn-dark btn-block text-white" onclick="selectCoffee(3)">Select Coffee</a>
                 </div>
             </div>
           </div>
@@ -74,7 +78,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Coffee name</h5>
                     <p class="card-text">Some quick example text to build on the Coffee name and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-dark btn-block">Select Coffee</a>
+                    <a class="btn btn-dark btn-block text-white" onclick="selectCoffee(4)">Select Coffee</a>
                   </div>
               </div>
             </div>
@@ -84,7 +88,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Coffee name</h5>
                     <p class="card-text">Some quick example text to build on the Coffee name and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-dark btn-block">Select Coffee</a>
+                    <a class="btn btn-dark btn-block text-white" onclick="selectCoffee(5)">Select Coffee</a>
                   </div>
               </div>
             </div>
@@ -94,14 +98,16 @@
                   <div class="card-body">
                     <h5 class="card-title">Coffee name</h5>
                     <p class="card-text">Some quick example text to build on the Coffee name and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-dark btn-block">Select Coffee</a>
+                    <a class="btn btn-dark btn-block text-white" onclick="selectCoffee(6)">Select Coffee</a>
                   </div>
               </div>
             </div>
           </div>
-      </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <script src="script.js"></script>  
+    </body>
 </html>
