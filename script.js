@@ -1,16 +1,12 @@
 document.addEventListener('DOMContentLoaded', async () => updateTable(), false);
 
-// TODO Add images
-// TODO Charts
-// TODO Prettiefy joke page
-
 const coffeeList = [
-    { id: 1, title: "Name 1", desc: "Desctiption" },
-    { id: 2, title: "Name 2", desc: "Desctiption" },
-    { id: 3, title: "Name 3", desc: "Desctiption" },
-    { id: 4, title: "Name 4", desc: "Desctiption" },
-    { id: 5, title: "Name 5", desc: "Desctiption" },
-    { id: 6, title: "Name 6", desc: "Desctiption" },
+    { id: 1, title: "Cappuccino" },
+    { id: 3, title: "Coffee" },
+    { id: 4, title: "Espresso" },
+    { id: 2, title: "FlatWhite" },
+    { id: 5, title: "Latte" },
+    { id: 6, title: "Ristretto" },
 ];
 
 function selectCoffee(id) {
