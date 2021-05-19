@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', async () => updateTable(), false);
 
 const coffeeList = [
     { id: 1, title: "Cappuccino" },
+    { id: 2, title: "FlatWhite" },
     { id: 3, title: "Coffee" },
     { id: 4, title: "Espresso" },
-    { id: 2, title: "FlatWhite" },
     { id: 5, title: "Latte" },
     { id: 6, title: "Ristretto" },
 ];
